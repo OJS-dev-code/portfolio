@@ -4,6 +4,7 @@ import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import shopFrameLogo from '../images/shop frame logo-02 1.png';
 
 const projects = [
   {
@@ -110,9 +111,14 @@ export const ProjectsSection: React.FC = () => {
             }}
             className="projects-swiper"
           >
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <SwiperSlide key={project.name}>
                 <article className="project-card">
+                  {index === 0 && (
+                    <div className="project-card__image">
+                      <img src={shopFrameLogo} alt="ShopFrame Logo" />
+                    </div>
+                  )}
                   <h3 className="project-card__title">{project.name}</h3>
                   <p className="project-card__meta">
                     <span>{project.period}</span>
