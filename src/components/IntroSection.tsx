@@ -3,8 +3,7 @@ import React from 'react';
 export const IntroSection: React.FC = () => {
   return (
     <section id="top" className="section section--intro">
-      <div className="section__inner">
-        <p className="badge">Frontend Developer</p>
+      <div className="section__inner intro__container">
         <h1 className="intro__title">
           사용자 경험과 편리성을 위한 웹을 만드는
           <br />

@@ -11,13 +11,6 @@ export const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="header__inner">
-        <button
-          className="header__logo"
-          type="button"
-          onClick={() => handleScroll('top')}
-        >
-          OJS
-        </button>
         <nav className="header__nav">
           <button type="button" onClick={() => handleScroll('projects')}>
             Projects
